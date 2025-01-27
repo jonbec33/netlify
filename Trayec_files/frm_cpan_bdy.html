@@ -117,7 +117,7 @@
 
 </script>
 
-      <form action="calificaciones.html" method="get" name="frmSIAE" id="frmSIAE">
+      <form id="form-consultar" onsubmit="redirigir(event)">
 
       <input type="hidden" name="cta" value="319023165">
     
@@ -282,7 +282,12 @@
   
   <p>&nbsp;</p>
     
-  
+  <script>
+  function redirigir(event) {
+    event.preventDefault(); // Evita que el formulario se envíe de manera predeterminada
+    window.location.href = 'calificaciones.html'; // Redirige a calificaciones.html
+  }
+</script>
 
 
     <div id="facebox" style="display:none;">       <div class="popup">         <table>           <tbody>             <tr>               <td class="tl"></td><td class="b"></td><td class="tr"></td>             </tr>             <tr>               <td class="b"></td>               <td class="body">                 <div class="content">                 </div>                 <div class="footer">                   <a href="https://www.dgae-siae.unam.mx/www_try.php#" class="close">                     <img src="./closelabel.gif" title="Cerrar" class="close_image">                   </a>                 </div>               </td>               <td class="b"></td>             </tr>             <tr>               <td class="bl"></td><td class="b"></td><td class="br"></td>             </tr>           </tbody>         </table>       </div>     </div></body></html>
