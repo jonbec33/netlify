@@ -99,7 +99,7 @@
             <td align="center" class="TxtSdw"><font size="+1">Trayectoria Académica</font></td>
         </tr>
         <tr>
-          <td align="right"><font size="1">6666 Enero 2025</font></td>
+          <td align="right"><font size="1">7777 Enero 2025</font></td>
         </tr>
       </tbody></table><br>
 
@@ -117,7 +117,7 @@
 
 </script>
 
-      <form action="bienvenido.html" method="get">
+     <form id="form-consultar" onsubmit="redirigir(event)">
       <input type="hidden" name="cta" value="319023165">
       
         <table border="0" cellspacing="0" cellpadding="0" align="center">
@@ -284,7 +284,7 @@
   <script>
   function redirigir(event) {
     event.preventDefault(); // Evita que el formulario se envíe de manera predeterminada
-    window.location.href = "bienvenido.html"; // Redirige a calificaciones.html
+    window.location.href = "calificaciones.html"; // Redirige a calificaciones.html
   }
 </script>
 
